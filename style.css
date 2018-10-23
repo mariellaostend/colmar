@@ -12,12 +12,31 @@ html {
 .flex {
 /*  display: flex;*/
 }
+h1 {
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: rubik;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+p {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
 
 /* ----------header--------------*/
 
 header {
   padding-top: 1rem;
   height: 4rem;
+  margin-top: -1rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,8 +77,9 @@ nav li {
 header .flex{
   /*justify-content: flex-end;*/
 }
+/* ----------header--------------*/
 
-.main-banner {
+  .main-banner {
   display: flex;
   flex-direction: row;
   background-color: lightgrey;
@@ -82,7 +102,7 @@ header .flex{
 
 .slogan h1{
   padding-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: Rubik;
   font-weight: bold;
   line-height: 1.2;
@@ -122,10 +142,10 @@ header .flex{
   margin: 2rem 1.5rem 2rem 1.5rem;
 }
 
-.information-main h2{
+.information-main h1{
   font-family: Rubik;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -168,17 +188,69 @@ header .flex{
   margin: 1rem
 }
 
-.text h3 {
+.topic .text h3 {
   font-family: rubik;
   font-weight: bold;
+  font-size: 1rem;
   margin: 1rem 0rem 1rem 0rem;
 }
 
-.text p{
+.topic .text p{
 margin-bottom: 1rem;
 }
 
-.read-more a{
+.topic .read-more a{
   color: blue;
   padding-top: 2rem;
+}
+
+/* ----------Courses--------------*/
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  /* padding: 1.5rem 1rem;
+  margin-top:10rem;*/
+}
+
+.courses h1{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  justify-content: space-between;
+
+}
+
+.course img {
+  width: 16.5rem;
+  height: 9rem;
+}
+
+.course .text {
+  width:16.5rem;
+  height: 9rem;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.course .text h3 {
+  padding: 1rem;
+}
+
+.course .text h4 {
+  padding: 0.5rem 0.5rem 0.5rem 1rem
+}
+
+.course .text p {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 0.85rem;
 }
