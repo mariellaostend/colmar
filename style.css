@@ -55,8 +55,15 @@ header {
   width: 100%
 }
 
+.desktop {
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
 nav {
-  display:flex;
+  /*display:flex; */
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
@@ -74,16 +81,16 @@ nav img {
   margin-left: 1.5rem;
 }
 
-nav ul {
+nav .menu-desktop ul {
   margin-right: 1rem;
 }
 
-nav li {
+nav .menu-desktop li {
   display: inline;
   padding: 0 1rem;
 }
 
-nav li:nth-child(even){
+nav .menu-desktop li:nth-child(even){
   width: 1rem;
   height: 4rem;
   background-color: aqua;
@@ -93,6 +100,26 @@ nav li:nth-child(even){
   display:none;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width:760px){
+
+.desktop {
+    display:none;
+    }
+
+.menu-mobile {
+   display: inline-flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width:100%
+ }
+
+}
+
+
 /* ----------header main--------------*/
 
   .main-banner {
@@ -100,7 +127,11 @@ nav li:nth-child(even){
   flex-direction: row;
   background-color: lightgrey;
   padding-top: 4rem;
+  border: 1px solid lightgrey;
+}
 
+.image-container {
+    width: 60%;
 }
 
 /*
@@ -109,14 +140,14 @@ nav li:nth-child(even){
   height: auto;
   margin: 2rem 0rem 2rem 1.5rem;
 }
-*/
 
+/*
 .main-banner img {
   width: 33rem;
   height: auto;
   margin: 2rem 1.5rem 2rem 1.5rem;
 }
-
+*/
 
 .slogan {
   width: 40%;
@@ -150,7 +181,25 @@ nav li:nth-child(even){
   font-family: Roboto;
   font-weight: normal;
   color: white;
+  margin-bottom: 2rem;
 }
+
+@media only screen and (max-width:760px){
+.main-banner {
+  flex-direction: column;
+  width:100%;
+}
+
+.main-banner img {
+margin-left: 0rem;
+}
+
+.slogan {
+padding-left: 1.5rem;
+}
+
+}
+
 
 /* ----------Information--------------*/
 
@@ -158,8 +207,8 @@ nav li:nth-child(even){
   display: flex;
   flex-direction: row;
   background-color: white;
-  /* padding: 1.5rem 1rem;
-  margin-top:10rem;*/
+  border: 1px solid lightgrey;
+  margin-top:2rem;
 }
 
 .practicing img {
@@ -199,6 +248,10 @@ nav li:nth-child(even){
   margin-top:10rem;*/
 }
 
+.topic:hover {
+  background-color: lightgrey;
+}
+
 .topic {
   display: flex;
   flex-direction: row;
@@ -230,12 +283,21 @@ margin-bottom: 1rem;
   padding-top: 2rem;
 }
 
+@media only screen and (max-width:760px){
+
+.practicing {
+  display: none;
+}
+
+
+}
 /* ----------Courses--------------*/
 
 .courses {
   display: flex;
   flex-direction: column;
   background-color: lightgrey;
+  margin-top: 2rem;
   /* padding: 1.5rem 1rem;
   margin-top:10rem;*/
 }
@@ -285,6 +347,8 @@ margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   background-color: white;
+  border: 1px solid lightgrey;
+  margin-top: 2rem;
 }
 
 .thesis h1{
@@ -355,8 +419,9 @@ footer {
   flex-direction: row;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  border-top: 1px solid darkgrey;
+  border: 1px solid lightgrey;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 footer p{
   margin-left: 1.5rem;
