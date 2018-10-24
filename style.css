@@ -15,6 +15,7 @@ html {
 h1 {
   font-family: Rubik;
   font-weight: bold;
+  color: black;
   font-size: 2rem;
 }
 
@@ -22,16 +23,25 @@ h3 {
   font-family: rubik;
   font-weight: bold;
   font-size: 1rem;
+  color: black;
+}
+
+h4 {
+  font-family: rubik;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
 }
 
 p {
   font-family: roboto;
   font-weight: normal;
   font-size: 1rem;
+  color: black;
 }
 
 
-/* ----------header--------------*/
+/* ----------header nav--------------*/
 
 header {
   padding-top: 1rem;
@@ -40,6 +50,9 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: fixed;
+  z-index:100;
+  width: 100%
 }
 
 nav {
@@ -70,30 +83,43 @@ nav li {
   padding: 0 1rem;
 }
 
+nav li:nth-child(even){
+  width: 1rem;
+  height: 4rem;
+  background-color: aqua;
+}
+
 .truncated-menu {
   display:none;
 }
 
-header .flex{
-  /*justify-content: flex-end;*/
-}
-/* ----------main--------------*/
+/* ----------header main--------------*/
 
   .main-banner {
   display: flex;
   flex-direction: row;
   background-color: lightgrey;
-  /* padding: 1.5rem 1rem;
-  margin-top:10rem;*/
+  padding-top: 4rem;
+
 }
 
+/*
+.image-container img{
+  width: 60%;
+  height: auto;
+  margin: 2rem 0rem 2rem 1.5rem;
+}
+*/
+
 .main-banner img {
-  width: 27rem;
-  height: 20rem;
+  width: 33rem;
+  height: auto;
   margin: 2rem 1.5rem 2rem 1.5rem;
 }
 
+
 .slogan {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +141,7 @@ header .flex{
 }
 
 .slogan .button {
-  width: 20rem;
+  width: 17rem;
   background-color: grey;
   padding: 0.7rem;
   text-align: center;
@@ -137,8 +163,8 @@ header .flex{
 }
 
 .practicing img {
-  width: 27rem;
-  height: 16rem;
+  width: 33rem;
+  height: auto;
   margin: 2rem 1.5rem 2rem 1.5rem;
 }
 
@@ -276,6 +302,7 @@ margin-bottom: 1rem;
 .left-box h3{
   width: 27rem;
   margin: 0rem 1.5rem 0rem 1.5rem;
+
 }
 
 .left-box p{
@@ -316,7 +343,30 @@ margin-bottom: 1rem;
   margin-top: 1.5rem;
 }
 
-.urban p3{
+.urban p{
   margin-bottom: 2rem;
-  
+}
+
+/* ----------Footer--------------*/
+
+footer {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid darkgrey;
+  justify-content: space-between;
+}
+footer p{
+  margin-left: 1.5rem;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+}
+
+.terms p{
+  padding: 0rem 1rem 0rem 0rem;
 }
