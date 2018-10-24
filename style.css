@@ -133,16 +133,17 @@ nav .menu-desktop li:nth-child(even){
 
 .image-container {
     width: 60%;
+    margin: 2rem 0rem 2rem 1.5rem;
 }
 
 .image-container img{
   width: 100%;
   height: auto;
-  margin: 2rem 0rem 2rem 1.5rem;
-}
+  }
 
 .slogan {
   width: 40%;
+  margin: 2rem 0rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,7 +195,6 @@ padding-left: 1.5rem;
 
 }
 
-
 /* ----------Information--------------*/
 
 .information {
@@ -213,7 +213,7 @@ padding-left: 1.5rem;
 .practicing img {
   width: 100%;
   height: auto;
-  margin: 2rem 1.5rem 2rem 1.5rem;
+  margin: 2rem 0rem 2rem 1.5rem;
 }
 
 .information-main h1{
