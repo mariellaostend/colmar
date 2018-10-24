@@ -110,12 +110,16 @@ nav .menu-desktop li:nth-child(even){
     display:none;
     }
 
-.menu-mobile {
-   display: inline-flex;
+.menu-mobile{
+   display: flex;
    flex-direction: row;
-   justify-content: space-around;
-   width:100%
  }
+
+
+.menu-mobile ul{
+  display: flex;
+  justify-content: center;
+}
 
 }
 
@@ -131,12 +135,12 @@ nav .menu-desktop li:nth-child(even){
   justify-content: space-between;
 }
 
-.image-container {
+.main-banner .image-container {
     width: 60%;
     margin: 2rem 0rem 2rem 1.5rem;
 }
 
-.image-container img{
+.main-banner .image-container img{
   width: 100%;
   height: auto;
   }
@@ -206,14 +210,15 @@ padding-left: 1.5rem;
 }
 
 .practicing {
-  width:60%
+  width:60%;
+  margin: 2rem 0rem 2rem 1.5rem;
 }
 
 
 .practicing img {
   width: 100%;
   height: auto;
-  margin: 2rem 0rem 2rem 1.5rem;
+
 }
 
 .information-main h1{
