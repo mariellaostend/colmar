@@ -193,6 +193,11 @@ nav .menu-desktop li:nth-child(even){
   width:100%;
 }
 
+.main-banner .image-container {
+
+
+}
+
 .main-banner img {
 margin-left: 0rem;
 }
@@ -272,8 +277,8 @@ padding-left: 1.5rem;
 }
 
 .topic img {
-  width: 10rem;
-  height: 10rem;
+  width: 35%;
+  height:9rem;
   margin: 1rem
 }
 
@@ -293,16 +298,54 @@ margin-bottom: 1rem;
   padding-top: 2rem;
 }
 
-@media only screen and (max-width:760px){
-
-.practicing {
+.topics-mobile {
   display: none;
 }
 
-.topics {
-  width:100%;
+@media only screen and (max-width:760px){
+
+.information {
+  display: none;
 }
 
+.topics-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.topics-mobile .topic{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+.topics-mobile .topic:hover{
+  background-color: lightgrey;
+}
+
+.topics-mobile .topic img{
+ margin: 1rem;
+}
+
+.topics-mobile .topic .text h3 {
+  font-family: rubik;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.topics-mobile .topic .text p{
+  padding-left: 1rem;
+}
+
+.topics-mobile .topic .text .read-more {
+  color: blue;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
 }
 /* ----------Courses--------------*/
 
