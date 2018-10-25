@@ -65,7 +65,6 @@ nav {
   /*display:flex; */
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
   background-color: white;
   color: black;
 }
@@ -82,10 +81,11 @@ nav img {
 
 nav .menu-desktop ul {
   margin-right: 1rem;
+  display:flex;
+  align-items: center;
 }
 
 nav .menu-desktop li {
-  display: inline;
   padding: 0 1rem;
 }
 
@@ -95,7 +95,7 @@ nav .menu-desktop li {
 }
 
 nav .menu-desktop li:nth-child(even){
-  width: 1rem;
+  width: 0.1rem;
   height: 4rem;
   background-color: aqua;
 }
@@ -109,6 +109,11 @@ nav .menu-desktop li:nth-child(even){
 }
 
 @media only screen and (max-width:760px){
+
+  .container {
+    width:100%;
+  }
+
 
 .desktop {
     display:none;
@@ -188,14 +193,14 @@ nav .menu-desktop li:nth-child(even){
 }
 
 @media only screen and (max-width:760px){
+
+  .container {
+    width:100%;
+  }
+
 .main-banner {
   flex-direction: column;
   width:100%;
-}
-
-.main-banner .image-container {
-
-
 }
 
 .main-banner img {
@@ -304,6 +309,10 @@ margin-bottom: 1rem;
 
 @media only screen and (max-width:760px){
 
+  .container {
+    width:100%;
+  }
+
 .information {
   display: none;
 }
@@ -409,6 +418,11 @@ margin-bottom: 1rem;
 }
 
 @media only screen and (max-width:760px){
+
+  .container {
+    width:100%;
+  }
+
   .course-info {
     display: none;
   }
@@ -525,6 +539,11 @@ margin-bottom: 1rem;
 
 @media only screen and (max-width:760px){
 
+  .container {
+    width:100%;
+  }
+
+
 .right-box {
   display:none;
 }
@@ -569,6 +588,10 @@ footer p{
 }
 
 @media only screen and (max-width:760px){
+  .container {
+    width:100%;
+  }
+
   .terms {
     display: none;
 }
